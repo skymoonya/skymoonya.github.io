@@ -1,1 +1,143 @@
-hello world
+<!doctype html>
+<html>
+<body>
+</body>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="moon">
+	<title>个人简历</title>
+	<link type="text/css" rel="stylesheet" href="3rd/font-awesome/font-awesome.min.css"></link>
+	<link type="text/css" rel="stylesheet" href="css/resume.css"></link>
+</head>
+<body>
+<div class="container">
+	<div class="side-left">
+		<div class="head">
+			<img src="images/funny.jpg" />
+			<label class="info-employ">前端开发/全栈开发</label>
+		</div>
+		<div class="info-base">
+			<h3><i class="fa fa-user"></i> 基本信息</h3>
+			<div class="info-spe">
+				<div>姓名</div><div>何强</div>
+				<div>学历</div><div>本科</div>
+				<div>毕业院校</div><div>湖南科技大学</div>
+				<div>毕业年份</div><div>2015</div>
+			</div>
+		</div>
+		<div class="info-contact">
+			<h3><i class="fa fa-phone"></i> 联系方式</h3>
+			<div class="info-spe">
+				<div>手机</div><div>18684807583</div>
+				<div>QQ邮箱</div><div>skymoonya@qq.com</div>
+			</div>
+		</div>
+		<div class="skill">
+			<h3><i class="fa fa-star"></i> 技能点</h3>
+			<div class="info-spe">
+				<div>javascript</div><div><div class="progress javascript"></div></div>
+				<div>nodejs</div><div><div class="progress nodejs"></div></div>
+				<div>html/css</div><div><div class="progress html"></div></div>
+				<div>python</div><div><div class="progress python"></div></div>
+				<div>java</div><div><div class="progress java"></div></div>
+			</div>
+		</div>
+		<div class="technology-stack">
+			<h3><i class="fa fa-wrench"></i> 技术栈</h3>
+			<div class="info-spe">
+				<div>前端</div><div>angular, react, redux, immutable, babel, webpack, less, sass, require, echarts, ES6/ES7, bootstrap</div>
+				<div>后端</div><div>nodejs, koa, sequelize, python, sqlalchemy, flask, java, kafka, kafka stream, logstash</div>
+				<div>数据库</div><div>mysql, redis, elasticsearch</div>
+			</div>
+		</div>
+		<div class="wechat">
+			<h3><i class="fa fa-wechat"></i> 个人微信</h3>
+			<img src="images/wechat.png" />
+		</div>
+	</div>
+	<div class="side-right">
+		<div class="exp-education">
+			<h3><i class="fa fa-book"></i> 教育经历</h3>
+			<ul><li><h4>湖南科技大学 - 网络工程专业(本科) 2011.9-2015.6</h4></li></ul>
+		</div>
+		<div class="exp-work">
+			<h3><i class="fa fa-briefcase"></i> 工作经历</h3>
+			<ul>
+				<li>
+					<h4>武汉市烽视威科技有限公司 深圳(前端开发工程师) 2015.8-2017.5</h4>
+					<p>nodejs后端开发和react,angular前端开发以及公司前端技术的选型，主要负责公司原有统计系统前端（使用angular1），推荐系统前后端（使用nodejs+react），以及移动大网二期项目统计子系统前后端（使用nodejs+react）</p>
+				</li>
+				<li>
+					<h4>北京思特奇信息技术股份有限公司安徽分公司(实习) 2014.12-2015.5</h4>
+					<p>对云平台进行维护，修复测试人员提出的bug，主要用js+jquery开发</p>
+				</li>
+			</ul>
+		</div>
+		<div class="project-company">
+			<h3><i class="fa fa-sticky-note"></i> 公司项目</h3>
+			<ul>
+				<li>
+					<h4>移动大网二期 2017.2-2017.5</h4>
+					<p>整个项目的功能主要是移动集团为互联网内容加速。我在其中负责统计系统，从数据采集，数据存储，到数据展示。最初数据未经处理直接存入elasticsearch，6000万条数据的聚合查询用了大概3.5秒，在将原始数据经过kafka stream聚合后再存入es，6000万条数据减少到10万条，es查询时间减少到1秒以内，我负责部分所使用技术为：
+					后端：nodejs+koa+pm2+elasticksearch+babel+ES6/ES7+logstash+kafka
+					前端：react+redux+immutable+antd+echarts+babel+less+webpack+react热更新</p>
+				</li>
+				<li>
+					<h4>推荐系统 2016.11-2017.2</h4>
+					<p>主要功能为针对芒果TV等运营商为用户提供个性化影片推荐。我负责推荐系统后端及前端，推荐引擎算出结果后将其存在redis中，主要功能为推荐引擎的结果提供手动干预能力，为影片添加黑白名单，以及推荐引擎参数调整，我负责部分所使用技术为：
+					后端：nodejs+koa+pm2+redis+babel+ES6/ES7
+					前端：react+redux+immutable+antd+babel+less+webpack+react热更新</p>
+				</li>
+				<li>
+					<h4>统计系统</h4>
+					<p>统计分析聚合各种日志，在图表中展示某些统计指标的趋势信息，如用户增长速度，影片热度等趋势信息。主要负责统计系统前端界面编写，使用angularjs，引入requireJS按需加载动态注册controler解决了需要使用script标签引入多个contoler以及一个js文件中注册多个contoler的麻烦
+					我负责部分所使用技术为：angularjs1+requirejs+echarts+jquery+bootstrap</p>
+				</li>
+				<li>
+					<h4>其他</h4>
+					<p>出了上述前端项目外，还有使用python+selenium+jenkins写过统计系统的自动化测试脚本以及基于python+sqlalchemy+flask的元数据管理系统为推荐系统提供基础元数据服务</p>
+				</li>
+			</ul>
+		</div>
+		<div class="project-personal">
+			<h3><i class="fa fa-sticky-note"></i> 个人项目</h3>
+			<ul>
+				<li>
+					<h4>2048</h4>
+					<p>最近开始玩github，没什么个人项目，点击<a href="/2048">这里</a>进入游戏</p>
+				</li>
+			</ul>
+		</div>
+		<div class="praise">
+			<h3><i class="fa fa-trophy"></i> 获奖与证书</h3>
+			<ul>
+				<li>
+					<h4>高级软件工程师</h4>
+				</li>
+				<li>
+					<h4>多次获得统一冰红茶再来一瓶奖</h4>
+				</li>
+			</ul>
+		</div>
+		<div class="evaluate">
+			<h3><i class="fa fa-diamond"></i> 自我评价</h3>
+			<p>	2年以上工作经验，独立开发过多个angular1和react项目，对其有着深刻的理解，喜欢写ES6/ES7代码并用babel转码，使用webpack打包，对redux也有着自己的理解，熟悉jquery。基本看完了css权威指南与部分javascript高级程序设计。有一定的英文文档阅读能力
+			除此之外也精通nodejs+koa的后端开发，尤其擅长大数据相关系统及其数据可视化
+			写过两篇没什么人气的博客(http://blog.csdn.net/qq_24840407/article/details/56035713)</p>
+		</div>
+	</div>
+</div>
+<script>
+	let length=document.querySelector('.side-left').offsetWidth;
+	let headImg=document.querySelector('.side-left .head img');
+	headImg.style.height=length/2+'px';
+	headImg.style.width=length/2+'px';
+	headImg.style.borderRadius=length/4+'px';
+	let wechatImg=document.querySelector('.side-left .wechat img');
+	wechatImg.style.height=length-20+'px';
+	wechatImg.style.width=length-20+'px';
+</script>
+</body>
+</html>
