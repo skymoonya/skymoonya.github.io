@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>形象视频</title>
+  <script src="../flexible.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="../vue.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <img src="./img/top_bg.png">
+      <div class="wenan">
+        <span>{{number}}</span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="ctitle">
+        <img src="./img/line.png">
+        <div>昨日幸运<br />获奖用户</div>
+        <img src="./img/line.png">
+      </div>
+      <div class="user">
+        <img :src="luckyUser.avatar">
+        <div>{{luckyUser.nickname}}</div>
+      </div>
+      <div class="ctitle">
+        <img src="./img/line.png">
+        <div>参与奖<br />获奖用户</div>
+        <img src="./img/line.png">
+      </div>
+      <div class="cusers">
+        <div class="user" v-for="user in joinUsers">
+          <img :src="user.avatar">
+          <div>{{user.nickname}}</div>
+        </div>
+      </div>
+      <div class="crule"><span>活动规则</span></div>
+    </div>
+    <div class="foot">
+      <div class="rule">
+        <div>
+          <span class="rule-title">活动时间：</span>
+          <span class="rule-content">2017.10.16-2017.10.22</span>
+        </div>
+        <div>
+          <span class="rule-title">活动对象：</span>
+          <span class="rule-content">平台女生</span>
+        </div>
+        <div>
+          <span class="rule-title">活动规则：</span>
+          <span class="rule-content">
+            <br />1.女生可在个人主页录制形象视频参与活动,视频认证成功的女生不能再参与活动.
+            <br />2.女生的形象视频认证成功后,会按照认证顺序收到约糖小蜜推送的数字号码,数字号码与每日幸运数字相同的女生中奖,获得活动专属礼物四叶草(价值1000金币).
+            <br />3.女生每日提交视频截止时间为下午6点(6点以后提交的视频视为参加次日活动),18:30发放当日奖品,中奖名单次日公布.
+            <br />4.每日在以往形象认证视频中(除中奖视频)随机抽取三个获得参与奖,奖品为100金币.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      new Vue({
+        el: '#app',
+        data: {
+          number: 20, //幸运数字
+          luckyUser: { //幸运奖用户
+            avatar: 'https://image.mymaiquan.com/jhd/user/2017/07/17/02ee75f8be924d899098304386e780b0.png?x-oss-process=image/resize,w_100,h_100',
+            nickname: '小慧慧',
+          },
+          joinUsers: [ //参与奖用户
+            {
+              avatar: 'https://image.mymaiquan.com/jhd/user/2017/09/26/e63870b80ebd4b62ac0af44db608eee9.png?x-oss-process=image/resize,w_100,h_100',
+              nickname: '林安妮',
+            },
+            {
+              avatar: 'https://image.mymaiquan.com/jhd/user/2017/10/07/ed67dc9b3a4447e0becdf6cea117117d.png?x-oss-process=image/resize,w_100,h_100',
+              nickname: 'muyi',
+            },
+            {
+              avatar: 'https://image.mymaiquan.com/jhd/user/2017/10/05/68b71ff3ef164717baf09c9c47d1121a.jpg?x-oss-process=image/resize,w_100,h_100',
+              nickname: '小黄人',
+            },
+          ],
+        }
+      })
+    })()
+  </script>
+</body>
+</html>

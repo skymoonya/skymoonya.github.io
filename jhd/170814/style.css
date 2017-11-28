@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 10rem;
+  margin: auto;
+  font-family: "Helvetica Neue", Helvetica, roboto, "microsoft yahei", sans-serif;
+  background-color: #f7f7f7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.rankitem {
+  background: #fff;
+  margin-bottom: 0.26666rem;
+  padding: 0.53rem 0 0.4rem 0;
+  position: relative;
+}
+
+.rankitem2 {
+  background: #fff;
+  margin-bottom: 0.26666rem;
+  height: 1.866rem;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-size: cover;
+  border-radius: 50%;
+  height: 1.866rem;
+  width: 1.866rem;
+  margin: auto;
+}
+
+.rankitem2-avatar {
+  background-size: cover;
+  border-radius: 50%;
+  width: 1.333rem;
+  height: 1.333rem;
+  margin: 0 0.4rem 0 0.266rem;
+}
+
+.userinfo {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.nickname {
+  color: #E8C28E;
+  font-size: 0.453rem;
+}
+
+.local {
+  color: #C4C4C4;
+  font-size: 0.373rem;
+}
+
+.local img {
+  width: 0.26rem;
+  vertical-align: baseline;
+  margin: 0 0.1066rem 0 0.2rem;
+}
+
+.rankitem2 .local {
+  margin-top: 0.15rem;
+}
+
+.rankitem2 .local img {
+  margin-left: 0;
+}
+
+.charm {
+  text-align: center;
+  font-size: 0.373rem;
+  color: #929292;
+  margin: .2rem 0;
+}
+
+.charm_value {
+  color: #FF5E5E;
+  margin-left: 0.2rem;
+  font-size: 0.453rem;
+}
+
+.gift {
+  text-align: center;
+  font-size: 0.373rem;
+  color: #929292;
+}
+
+.gift-item {
+  margin-right: 0.2133rem;
+}
+
+.gift-item img {
+  width: 0.4rem;
+  vertical-align: middle;
+}
+
+.top {
+  position: absolute;
+  left: 0;
+  top: 0.906rem;
+}
+
+.top img {
+  width: 2.133rem;
+}
+
+.top-text {
+  color: #929292;
+  padding-left: 0.4rem;
+  font-size: 0.4rem;
+}
+
+.top-text span {
+  font-size: 0.533rem;
+}
+
+.rank-item2-info {
+  flex: 1;
+}
+
+.rankitem2 .charm {
+  text-align: right;
+  margin-right: 0.4rem;
+}
+
+.avatar, .rankitem2-avatar {
+  position: relative;
+}
+
+.avatar .attestation, .rankitem2-avatar .attestation {
+  position: absolute;
+  width: 0.586rem;
+  right: 0;
+  top: 0;
+}
+
+.rankitem2-avatar .attestation {
+  right: -0.266rem;
+}
+
+.icon-vip {
+  width: 0.64rem;
+  margin-left: 0.133rem;
+}

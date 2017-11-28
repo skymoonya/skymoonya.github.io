@@ -42,9 +42,15 @@ h3{
 }
 .side-left .head img{
 	margin: 20px auto;
+	border-radius: 50%;
+	width: 50%;
 }
 .side-left .head .info-employ{
 	color: rgb(103,131,144);
+}
+.side-left .wechat img {
+	/*max-width: 100%;*/
+	width: calc(100% - 20px);
 }
 .info-spe{
 	display: flex;
